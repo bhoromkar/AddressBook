@@ -82,11 +82,61 @@ public class AddressBook {
                 }
         System.out.println(person);
     }
+    public static void deleteContact(){
+
+        System.out.println("delete the Contact");
+        String s;
+        System.out.println("Choose an option");
+        int option = sc.nextInt();
+        switch (option) {
+            case 1:
+                System.out.println("Delete First name :");
+                person.setFirstName(null);
+                break;
+
+            case 2:
+                System.out.println("Delete Last name :");
+                person.setLastName(null);
+                break;
+            case 3 :
+                System.out.println("Delete Addresss");
+                person.setAddress(null);
+                break;
+            case 4:
+                System.out.println("Delete the City :");
+                person.setCity(null);
+                break;
+            case 5:
+                System.out.println("Delete the state :");
+                person.setState(null);
+                break;
+            case 6:
+                System.out.println("Delete zip code :");
+                person.setZip(0);
+                break;
+            case 7:
+                System.out.println("Delete Phone number:");
+                person.setPhoneNumber(0);
+                break;
+            case 8:
+                System.out.println("Delete Phone number :");
+                person.setEmailId(null);
+                break;
+            default:
+                System.out.println("wrong option");
+
+
+        }
+        System.out.println(person);
+    }
 
     public static void main(String[] args) {
         AddressBook obj = new AddressBook();
         obj.addContact();
         editContact();
+        System.out.println(person);
+        deleteContact();;
+        System.out.println(person);
 
     }
 }
