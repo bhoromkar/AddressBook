@@ -22,6 +22,7 @@ public class Contact {
             this.phoneNumber = phoneNumber;
         }
 
+
         public Contact(){
 
         }
@@ -88,5 +89,19 @@ public class Contact {
 
     public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", emailId='" + emailId + '\'' +
+                ", zip=" + zip +
+                ", phoneNumber=" + phoneNumber +
+                '}';
     }
 }
