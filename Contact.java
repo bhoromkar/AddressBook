@@ -1,8 +1,12 @@
 package com.bridgelabz.addressbook;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Contact {
-
-        private String firstName;
+//    ArrayList<Contact> person= new ArrayList<Contact>();
+//person.add("")
+//ArrayList<String> person1 = new ArrayList<>();
+    private String firstName;
         private String lastName;
         private String address;
         private String city;
@@ -90,6 +94,7 @@ public class Contact {
     public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
 
     @Override
     public String toString() {
